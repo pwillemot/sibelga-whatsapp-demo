@@ -140,9 +140,9 @@ function getChosenSlot(userText, offset = 0) {
 
 const SCRIPT = [
   { agent: "Hi Marie! Our technician is scheduled to install your home charging station tomorrow at 10:00. If that time no longer works for you, you can easily reschedule right here in this conversation."},
-  { agent: "No worries at all, Marie! 😊 Let me check when our technician is available next…", autoNext: true },
+  { agent: "No worries at all, Marie! 😊 Let me check when our technician is available next week…", autoNext: true },
   { agent: `Great news — I found a few openings! Just reply with the number of your preferred slot:\n\n${buildSlotMessage(0, 5)}` },
-  { agent: "No problem at all, Marie! Let me look for availability a bit further out…", autoNext: true },
+  { agent: "Let me look for next week availability.", autoNext: true },
   { agent: `I found some new openings for the following week! Just reply with the number of your preferred slot:\n\n${buildSlotMessage(5, 5)}` },
   { agent: "You're all set! 🎉 Our technician will come to install your home charging station on *{slot}*. You'll receive a confirmation by email shortly.\n\nIs there anything else I can help you with?" },
   { agent: "Thank you for choosing Sibelga — see you soon! ⚡" },
