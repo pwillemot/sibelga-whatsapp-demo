@@ -591,8 +591,8 @@ html, body {
 }
 .wa-bubble-time { font-size: 11px; color: rgba(0,0,0,0.45); }
 .wa-bubble-row.outgoing .wa-bubble-time { color: rgba(255,255,255,0.75); }
-.wa-ticks { font-size: 13px; color: rgba(255,255,255,0.75); }
-.wa-ticks.read { color: #fff; }
+.wa-ticks { display: inline-block; vertical-align: middle; color: rgba(255,255,255,0.75); }
+.wa-ticks.read { color: rgba(255,255,255,0.9); }
 
 /* typing */
 .wa-typing {

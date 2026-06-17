@@ -252,7 +252,10 @@ function addBubble(text, direction, time, ticks) {
   bubble.className = 'wa-bubble';
 
   const formattedText = direction === 'outgoing' ? formatUserText(text) : formatScriptText(text);
-  const ticksHtml = ticks ? `<span class="wa-ticks read">✓✓</span>` : '';
+  const ticksHtml = ticks ? `<svg class="wa-ticks read" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 5.5L4.5 9L11 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5 5.5L8.5 9L15 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>` : '';
   bubble.innerHTML = `
     <span class="wa-bubble-text">${formattedText}</span>
     <div class="wa-bubble-meta">
